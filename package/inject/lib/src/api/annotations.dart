@@ -186,10 +186,10 @@ class Injector {
   /// Modules supplying providers for the injector.
   ///
   /// Each [Type] must be a `class` definition annotated with [module].
-  final List<Type> modules;
+  final List<Type>? modules;
 
   // ignore: public_member_api_docs
-  const factory Injector([List<Type> modules]) = Injector._;
+  const factory Injector([List<Type>? modules]) = Injector._;
 
   const Injector._([this.modules = const <Type>[]]);
 }
